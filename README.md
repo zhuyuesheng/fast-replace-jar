@@ -5,7 +5,7 @@
 2.本工具调用winRar命令进行替换,替换无损，正常运行
 3.本工具替换规则为jar包中相同目录下的相同文件进行替换，jar包中没有目录，就进行添加
 4.本工具能为分布式部署的相同jar包进行批量替换
-5.本工具使用场景是为了无法到达部署现场又急于更新代码所使用的，放好位置，打包给现场的不会编码的人员一键替换启动
+5.本工具使用场景是为了无法到达部署现场又急于更新代码所使用的，放好资源位置，打包给现场的不会编码的人员一键替换启动
 ```
 
 *******一键替换启动jar使用*******
@@ -14,8 +14,7 @@
 ``` bash
 BOOT-INF/classes目录下面和jar包里面相同的结构 
 #例如
-echo *******更新jar程序******
-start java -jar app-update-tool.jar /home/user/ app-user /home/user/logs/ app-user.log
+BOOT-INF/classes/com/tydic/common/test.class
 ```
 
 2.修改一键替换启动.bat输入启动args的参数 
