@@ -44,7 +44,7 @@ nohup java -jar  /home/user/app-user.jar >> /home/user/logs/app-user.log 2>&1 &
 
 
 *******一键替换启动 jar展示*******
-
+![image1](https://github.com/zhuyuesheng/vue-blog/blob/master/img-store/1.png)
 
 
 
