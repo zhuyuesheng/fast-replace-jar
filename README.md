@@ -10,7 +10,15 @@
 
 *******一键替换启动jar使用*******
 
-1.修改一键替换启动.bat输入启动args的参数 
+1.放入替换的文件
+``` bash
+BOOT-INF/classes目录下面和jar包里面相同的结构 
+#例如
+echo *******更新jar程序******
+start java -jar app-update-tool.jar /home/user/ app-user /home/user/logs/ app-user.log
+```
+
+2.修改一键替换启动.bat输入启动args的参数 
 ``` bash
 jar路径 jar名字 日志文件名称 日志文件名称 
 #例如
@@ -18,7 +26,7 @@ echo *******更新jar程序******
 start java -jar app-update-tool.jar /home/user/ app-user /home/user/logs/ app-user.log
 ```
 
-2.修改config.csv
+3.修改config.csv
 ``` bash
 #输入linux服务器参数
 IP1 端口号 用户名 密码
@@ -28,7 +36,7 @@ IP2 端口号 用户名 密码
 192.168.128.1,22,root,123456
 ```
 
-3.备注说明
+4.备注说明
 ``` bash
 #重新启动jar包为后台启动并且输出打印内容
 #例如 
